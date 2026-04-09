@@ -85,7 +85,7 @@ class PySMAOptionsConfigFlow(config_entries.OptionsFlowWithConfigEntry):
                         vol.Required(
                             CONF_SCAN_INTERVAL,
                             default=self.config_entry.data.get(CONF_SCAN_INTERVAL, 5),
-                        ): int
+                        ): float
                     },
                     extra=vol.ALLOW_EXTRA,
                 ),
